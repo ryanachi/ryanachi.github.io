@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* GENERAL */
+
+body {
+    margin: 3em;
+    background-image: linear-gradient(45deg, #3571acff, #8c5994ff);
+    box-shadow: 100px black;
+}
+
+.main {
+
+    padding: 1em 0.5em 1em 0.5em;
+    outline-style: solid;
+    outline-width: 12px;
+    outline-color: white;
+    background-color: white;
+    border: 10px solid;
+    border-image-source: linear-gradient(45deg, #3571acff, #8c5994ff);
+    border-image-slice: 1;
+}
+
+
+* {
+  font-family:  'Fira Sans','Source Sans Pro', 'Calibri', sans-serif;
+    
+}
+
+
+div.container {
+    font-weight: 300;
+}
+
+
+/* HEADER ROW */
+
+img {
+    display: inline;
+    width: 8em;
+    height: 8em;
+    margin-top: 0.1em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+/*    background-image: linear-gradient(45deg, #3571acff, #8c5994ff);*/
+    filter: drop-shadow(4px 4px 5px #888);
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header-row h1 {
+    margin: 0 0 0 0.5em;
+    font-size: 4.5em;
+    max-width: 100%;
+    font-family: 'Fira Sans','Source Sans Pro', 'Calibri', sans-serif;
+    text-align: left;
+    background: -webkit-linear-gradient(45deg, #3571acff, #8c5994ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-panel {
+    margin: -0.4em 0 -1em 1.5em;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.header {
+  max-width: 40em;
+  padding: 5px;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-radius: 2em;
+}
+
+
+.button1 {
+    padding:0.7em 1.7em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Fira Sans','Source Sans Pro', 'Calibri', sans-serif;
+    font-weight:400;
+}
+
+a {
+    color: 	#3571acff;
+}
+
+a.no-line {
+    text-decoration: none;
+    
+}
+a.button1:visited {
+    color: 	#3571acff;
+}
+
+a:active {
+    color: 	#be93c5ff !important;
+
+}
+
+/* SECTION BREAKS */
+
+/*
+.container::before {
+    content: "----------";
+    
+    letter-spacing: -10px;
+    font-size: 70px;
+    letter-spacing: -0.14em;
+    text-align: center;
+    color: #be93c5ff;
+    display: block;
+    
+    background-image: linear-gradient(45deg, #3571acff, #8c5994ff);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-text-fill-color: transparent;
+}
+*/
+
+hr.line-break {
+    background-image: linear-gradient(45deg, #3571acff, #8c5994ff); 
+    height: 0.35em;
+    width: 15em;
+    margin: 2.5em auto;
+    border: none;
+    outline: none;
+}
+
+
+/* DIV */
+
+div.container {
+  max-width: 40em;
+  padding: 5px;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-radius: 2em;
+}
+
+
+h2 {
+    margin-top: -0.008em;
+}
+
+div.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* PHONE SIZE */
+@media only screen and (max-width: 980px) {
+    .header-row h1 {
+        margin: 0 0 0 0.5em;
+        font-size: 5em;
+        max-width: 100%;
+        font-family: 'Fira Sans','Source Sans Pro', 'Calibri', sans-serif;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .header-row h1 {
+        margin: 0 0 0 0.5em;
+        font-size: 4.5em;
+        max-width: 100%;
+        font-family: 'Fira Sans','Source Sans Pro', 'Calibri', sans-serif;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    img {
+        display: inline;
+        width: 6em;
+        height: 6em;
+        margin-top: 0.1em;
+        margin-right: 0.5em;
+        border-radius: 50%
+    }
+
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .header-row h1 {
+        margin: 0 0 0 0.5em;
+        font-size: 3.25em;
+        max-width: 100%;
+        font-family: 'Fira Sans','Source Sans Pro', 'Calibri', sans-serif;
+        text-align: left;
+    }
+
+    .button-panel {
+        margin: -0.4em 0 -1em 1.5em;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+
+    }
+}
